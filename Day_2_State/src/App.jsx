@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import UserCard from './UserCard'
 import ProjectOne from './ProjectOne'
+import TaskList from './TaskList'
 
 function App() {
   const [count,setCount] = useState(0)
@@ -23,6 +24,8 @@ function App() {
       </>
       <UserCard />
       <ProjectOne />
+      <TaskList />
+
     </>
   )
 }
