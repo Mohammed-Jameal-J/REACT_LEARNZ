@@ -1,6 +1,6 @@
-import React from "react";
+import React, { memo } from "react";
 
-const SearchBar = ({handleSearchChange}) => {
+const SearchBar = memo(({handleSearchChange}) => {
 
     const handleChange = (event) => {
         handleSearchChange(event.target.value);
@@ -13,6 +13,6 @@ const SearchBar = ({handleSearchChange}) => {
       placeholder="Add a New Task"
     />
   );
-};
+});
 
 export default SearchBar;

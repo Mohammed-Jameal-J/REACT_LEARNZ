@@ -1,6 +1,7 @@
 import React from 'react'
+import { memo } from 'react';
 
-const TodoForm = ({text, handleSubmit, handleInputChange}) => {
+const TodoForm = memo(({text, handleSubmit, handleInputChange}) => {
     const onInputChange = (event) => {
         handleInputChange(event.target.value);
     }
@@ -22,6 +23,6 @@ const TodoForm = ({text, handleSubmit, handleInputChange}) => {
         {text.id !== 0 && <button type="submit">EDIT</button>}
       </form>
   )
-}
+})
 
 export default TodoForm
